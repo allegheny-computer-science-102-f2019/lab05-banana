@@ -8,7 +8,14 @@
 
  2. The articles (five or so) where the questions-in blue from the assignment sheet are generally satisfied.
 
+APPLICATIONS OF GRAPH THEORY IN COMPUTER SCIENCE AN OVERVIEW
+This article talks about how mathematics influences a large number of other subjects. Application of graph theory has allowed for the testing of theoretical concepts. This article can help our project by giving us an understanding of many of the applications that have already been implemented using graph theory, providing ideas and options. This will assist us on our project by giving us a background and further understanding of what graph theory is. By having a better understanding of the background of graph theory, it will allow us to better implement mechanics of in a meaningful way. By giving background to what graph theory is, it walk through the mathematical background and function possible. In class, we have learned about a ways to draw graph theory, but this article dives deeper into more ways to describe and depict graph theory, such as with polygons of the voronai graph, and three dimensional nodes.
 
+Shirinivas, S. G., S. Vetrivel, and N. M. Elango. "Applications of graph theory in computer science an overview." International journal of engineering science and technology 2.9 (2010): 4610-4621.
 
+APPLIED GRAPH THEORY IN COMPUTER VISION AND PATTERN RECOGNITION
+Another application of graph theory is pattern recognition, allowing computers to begin to understand images. This plays a large role in being able to compute photos, and is especially important going into the future with self driving cars, facial detection, etc... 
+
+Kandel, Abraham, Horst Bunke, and Mark Last, eds. Applied graph theory in computer vision and pattern recognition. Springer Science & Business Media, 2007.
 
 #### (Note: Did you remember to add your names and the team name to this document!?!)
