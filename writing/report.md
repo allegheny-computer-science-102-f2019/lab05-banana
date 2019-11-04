@@ -38,8 +38,24 @@ NetworkX Reference PDF
 
 6. Graph theory in general provides experience and insight pertaining to UI/UX in the case of end users directly interacting with a visual, mutable graph.
 
-7. Once again, graph theory has been a major class focus, which is the main motivation for our team including NetworkX in our project.
+7. Graph theory has been a major class focus, which is the main motivation for our team including NetworkX in our project.
 
-NetworkX Developers. “NetworkX.” NetworkX, networkx.github.io/. 
+NetworkX Developers. “NetworkX.” NetworkX, networkx.github.io/.
+
+Flask Reference PDF
+
+1. Once again, in the same spirit of NetworkX, the Flask documentation provides a web application framework for use with Python3 libraries and code. Having a web-based project greatly enhances and simplifies user interaction.
+
+2. As mentioned above, running our project off a website will encourage more practical application access as well as simplify the user experience (No console or Github knowledge required, input sanitization, etc.).
+
+3. While Flask is generally Python package and library friendly, websites in their own right require a great deal of data structure and proper code development.
+
+4. Web application development is a massive component and mechanism of computer science, and flask enables our team to work with this form of application without extensive knowledge of HTML5, CSS, Javascript, etc.
+
+5. As Flask serves more to enhance our project and less so to construct the code of our project, the majority of the plausible mathematics involved in website development most likely concern the translation of local code to code that functions without console facilitation (i.e. more efficient browser-based calculations). 
+
+6. Again, web application development is more than just a set of mechanisms and algorithms for online code projection. Accessing and utilizing the web itself is a massive part of computer science in general, as well as emphasizing our UI/UX focus.
+
+7. Websites necessitate the proper application of discrete data structures in order to present and transport data in a unified fashion. Adherence to the principles of said discrete data structures will enable our project to function correctly on any system and ideally any browser.
 
 #### (Note: Did you remember to add your names and the team name to this document!?!)
