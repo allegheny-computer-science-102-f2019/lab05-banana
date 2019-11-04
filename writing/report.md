@@ -24,4 +24,22 @@ Another application of graph theory is pattern recognition, allowing computers t
 
 Kandel, Abraham, Horst Bunke, and Mark Last, eds. Applied graph theory in computer vision and pattern recognition. Springer Science & Business Media, 2007.
 
+NetworkX Reference PDF
+
+1. As the nature of this source is a reference PDF and not necessarily an academic article, the importance of this source is the documentation regarding the NetworkX package. NetworkX will serve as the foundation for our graph and network generation and manipulation.
+
+2. Using NetworkX for the foundational data structure will enable our group to focus our efforts on using graph theory to solve relevant problems. This is opposed to spending time creating the underlying data structure and necessary code for displaying said structure.
+
+3. NetworkX directly represents an application of graph theory and network structure as well as serving as experience learning from a Python3 library.
+
+4. NetworkX contains a plethora of methods and algorithms involving the manipulation of graphs and networks. This is deliberately vague as there are a variety of applicable algorithms dealing with networks with an equally diverse set of network properties (i.e. determining the order of a graph, sink nodes, Eulerian Trails, etc).
+
+5. NetworkX, as it is the foundation for our graph generation, also contains a multitude of mathematical methods involving the representation, optimization, and manipulation of graph theory applications. A possible example would include a mathematical equation that references vertex data in order to determine the maximum order given a number of vertices.
+
+6. Graph theory in general provides experience and insight pertaining to UI/UX in the case of end users directly interacting with a visual, mutable graph.
+
+7. Once again, graph theory has been a major class focus, which is the main motivation for our team including NetworkX in our project.
+
+NetworkX Developers. “NetworkX.” NetworkX, networkx.github.io/. 
+
 #### (Note: Did you remember to add your names and the team name to this document!?!)
