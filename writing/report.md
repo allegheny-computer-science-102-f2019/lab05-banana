@@ -52,10 +52,26 @@ Flask Reference PDF
 
 4. Web application development is a massive component and mechanism of computer science, and flask enables our team to work with this form of application without extensive knowledge of HTML5, CSS, Javascript, etc.
 
-5. As Flask serves more to enhance our project and less so to construct the code of our project, the majority of the plausible mathematics involved in website development most likely concern the translation of local code to code that functions without console facilitation (i.e. more efficient browser-based calculations). 
+5. As Flask serves more to enhance our project and less so to construct the code of our project, the majority of the plausible mathematics involved in website development most likely concern the translation of local code to code that functions without console facilitation (i.e. more efficient browser-based calculations).
 
 6. Again, web application development is more than just a set of mechanisms and algorithms for online code projection. Accessing and utilizing the web itself is a massive part of computer science in general, as well as emphasizing our UI/UX focus.
 
 7. Websites necessitate the proper application of discrete data structures in order to present and transport data in a unified fashion. Adherence to the principles of said discrete data structures will enable our project to function correctly on any system and ideally any browser.
+
+Bootstrap Reference PDF
+
+1. Bootstrap is a framework for CSS, Javascript, and jQuuery projects, designed to accelerate and facilitate the production of websites.
+
+2. Similar to the role of Flask, Bootstrap will provide additional tools for regulating the function of our website as well as ensuring consistent and reliable code.
+
+3. As a framework, Bootstrap will function primarily to regulate our data structure and web-oriented code.
+
+4. Again, similar to the role of Flask, Bootstrap provides a foundation for web application development.
+
+5. As referenced in the Flask article responses, our program is intended to work on the majority of modern browsers. Bootstrap helps ensure this compatibility while maintaining code consistency.
+
+6. Frameworks, while not necessary for web development, both provide a consistent code structure to ease development as well as eliminating unnecessary groundwork for web-based code.
+
+7. While not explicitly covered through the class material, code reusability and standardized development is an industrial standard.
 
 #### (Note: Did you remember to add your names and the team name to this document!?!)
