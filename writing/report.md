@@ -58,6 +58,8 @@ Flask Reference PDF
 
 7. Websites necessitate the proper application of discrete data structures in order to present and transport data in a unified fashion. Adherence to the principles of said discrete data structures will enable our project to function correctly on any system and ideally any browser.
 
+“Flask.” Pallets, palletsprojects.com/p/flask/.
+
 Bootstrap Reference PDF
 
 1. Bootstrap is a framework for CSS, Javascript, and jQuuery projects, designed to accelerate and facilitate the production of websites.
@@ -73,5 +75,7 @@ Bootstrap Reference PDF
 6. Frameworks, while not necessary for web development, both provide a consistent code structure to ease development as well as eliminating unnecessary groundwork for web-based code.
 
 7. While not explicitly covered through the class material, code reusability and standardized development is an industrial standard.
+
+Makai, Matt. “Bootstrap.” Full Stack Python, www.fullstackpython.com/bootstrap-css.html.
 
 #### (Note: Did you remember to add your names and the team name to this document!?!)
