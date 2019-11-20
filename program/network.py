@@ -1,8 +1,10 @@
 import networkx as nx
 from pyvis.network import Network
 
+
+
 def build_network(name):
-    net = Network(height="750px", width="50%", bgcolor="#222222", font_color="white", directed = True)
+    net = Network(height="100%", width="100%", bgcolor="#222222", font_color="white", directed = True)
 
     G = nx.DiGraph()
     G.add_nodes_from(["A", "B", "C", "D"])
@@ -13,7 +15,6 @@ def build_network(name):
                         ("D","E")])
     elist = [('A', 'B', 5.0), ('B', 'C', 3.0), ('A', 'C', 1.0), ('C', 'D', 7.3)]
     G.add_weighted_edges_from(elist)
-
 
     net.from_nx(G)
     # net.show_buttons(filter_=["manipulation"])
@@ -55,8 +56,8 @@ def build_network(name):
         "smooth": false
       },
       "manipulation": {
-        "enabled": true,
-        "initiallyActive": true
+        "enabled": false,
+        "initiallyActive": false
       },
       "physics": {
         "barnesHut": {
@@ -68,4 +69,6 @@ def build_network(name):
     ''')
 
     net.prep_notebook(custom_template=True, custom_template_path="templates/graph_template.html")
-    net.show("templates/" + name + ".html")
+    net.show("./running/" + name + ".html")
+
+build_network("this_test")
