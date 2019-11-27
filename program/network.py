@@ -1,74 +1,43 @@
 import networkx as nx
 from pyvis.network import Network
+import csvParse
 
 
+def build_network(html_name, csv):
 
-def build_network(name):
-    net = Network(height="100%", width="100%", bgcolor="#222222", font_color="white", directed = True)
+    built_network = Network(height="100%", width="100%", bgcolor="#19232D", font_color="#F0F0F0", directed = True)
 
-    G = nx.DiGraph()
-    G.add_nodes_from(["A", "B", "C", "D"])
-    G.add_edges_from([("A","B"),
-                        ("A","C"),
-                        ("B","E"),
-                        ("C","B"),
-                        ("D","E")])
-    elist = [('A', 'B', 5.0), ('B', 'C', 3.0), ('A', 'C', 1.0), ('C', 'D', 7.3)]
-    G.add_weighted_edges_from(elist)
+    currentGraph = nx.DiGraph()
 
-    net.from_nx(G)
-    # net.show_buttons(filter_=["manipulation"])
-    net.set_options('''
-    var options = {
-      "nodes": {
-        "color": {
-          "border": "rgba(230,248,255,1)",
-          "background": "rgba(0,227,252,1)",
-          "highlight": {
-            "border": "rgba(233,104,108,1)",
-            "background": "rgba(255,222,223,1)"
-          },
-          "hover": {
-            "border": "rgba(233,182,182,1)",
-            "background": "rgba(255,219,218,1)"
-          }
-        },
-        "font": {
-          "size": 12
-        },
-        "scaling": {
-          "min": 34,
-          "max": 54
-        },
-        "size": 12
-      },
-      "edges": {
-        "arrows": {
-          "to": {
-            "enabled": true,
-            "scaleFactor": 0.5
-          }
-        },
-        "arrowStrikethrough": false,
-        "color": {
-          "inherit": true
-        },
-        "smooth": false
-      },
-      "manipulation": {
-        "enabled": false,
-        "initiallyActive": false
-      },
-      "physics": {
-        "barnesHut": {
-          "avoidOverlap": 0.04
-        },
-        "minVelocity": 0.75
-      }
-    }
-    ''')
+    node_list = []
 
-    net.prep_notebook(custom_template=True, custom_template_path="templates/graph_template.html")
-    net.show("./running/" + name + ".html")
+    importedCSV = csvParse.read_csv(csv)
 
-build_network("this_test")
+    for dataSet in importedCSV:
+        if node_list.count(dataSet[0]) == 0:
+            currentGraph.add_node(dataSet[0])
+            node_list.append(dataSet[0])
+
+        if node_list.count(dataSet[1]) == 0:
+            currentGraph.add_node(dataSet[1])
+            node_list.append(dataSet[0])
+
+        currentGraph.add_edge(dataSet[0], dataSet[1], weight = dataSet[2])
+
+    built_network.from_nx(currentGraph)
+    neighbor_map = built_network.get_adj_list()
+
+    for node in built_network.nodes:
+        node["title"] += " Neighbors:<br>" + "<br>".join(neighbor_map[node["id"]])
+        node["value"] = len(neighbor_map[node["id"]])
+
+
+    built_network.barnes_hut()
+    #built_network.show_buttons()
+    built_network.prep_notebook(custom_template=True, custom_template_path="templates/graph_template.html")
+    built_network.show("./running/" + html_name + ".html")
+
+
+def show_network(html_dir, shownNetwork):
+
+    shownNetwork.show(html_dir)
