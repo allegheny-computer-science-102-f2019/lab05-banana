@@ -83,6 +83,8 @@ class MainWindow(QMainWindow):
         if filename:
             self.graphExists = True
             self.updatePage(filename)
+            path, file = os.path.split(filename)
+            self.setWindowTitle(file)
 
     def open_csv(self):
         filename, _ = QFileDialog.getOpenFileName(self, "Open file", "",
@@ -90,6 +92,8 @@ class MainWindow(QMainWindow):
 
         self.graphExists = True
         network.build_network("graph", filename)
+        path, file = os.path.split(filename)
+        self.setWindowTitle(file)
         self.updatePage("./running/graph.html")
         #print("Opened \"" + filename + "\" and HOPEFULLY created a graph from it.")
         # if filename:

@@ -2,5 +2,5 @@ PyQt5==5.13.2
 networkx==2.4
 pyvis==0.1.7.0
 QDarkStyle==2.7
-
+PyQtWebEngine==5.13.2
 
